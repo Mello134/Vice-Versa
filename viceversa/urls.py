@@ -20,10 +20,12 @@ from django.urls import path
 #     path('admin/', admin.site.urls),
 # ] - всё то что удалилил
 
-from . import views
+from . import views #импорт из корневой папки модуль/файл views.py
 
 urlpatterns = [
     path('', views.home),
     path('les/', views.lessons),
+    path('reverse/', views.reverse, name='reverse')
 ]
-
+#это ссылки - путь('что вводим в браузере', функция из файла/модуля vievs.название функции)
+#path('url', файл/модуь.функция, name='имя')

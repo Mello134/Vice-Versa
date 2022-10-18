@@ -9,10 +9,14 @@
 <body>
 
 	<h1>Vice Versa</h1>
-	<form>
+	<form action="{% url 'reverse' %}">  
+		<!--  <form action="reverse"> - путь по которому будем перенаправлены по кнопке сыбмит. Но так лучше не делать. изменили как лучне -->
+		<!-- <form action="{% url 'reverse' %}"> -  path('reverse/', views.reverse, name='reverse')  - ссылаемся именно на name -->
+
 		<textarea cols="50" rows="10" name="usertext"></textarea>
 		<br>
 		<input type="submit" value="Реверс текста">
+		<!-- сабмит это кнопка -->
 	</form>
 
 	<br><br><br>
