@@ -26,6 +26,7 @@ urlpatterns = [
     path('', views.home),
     path('les/', views.lessons),
     path('reverse/', views.reverse, name='reverse')
+
 ]
 #это ссылки - путь('что вводим в браузере', функция из файла/модуля vievs.название функции)
 #path('url', файл/модуь.функция, name='имя')

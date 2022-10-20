@@ -14,9 +14,11 @@ def reverse(request):	#создаём функцию ревёрса(параме
 	user_text = request.GET['usertext']#то что получаем от юзера
 	# print(user_text)
 	reversersed_text = user_text[::-1]#подучаем реверсивный текст
+	count_element_in_text = len(user_text.split())
 	return render(request, 'reverse.html', 
-		{'usertext':user_text, 'reversedtext':reversersed_text})
+		{'usertext':user_text, 'reversedtext':reversersed_text, 'countel': count_element_in_text} )
 	#возвращаем шаблон(запрос, "страница хтмл", {ключ введённый текст что получили от юзера: значение переменной, ключ реверсивный текст: })
+
 
 
 
